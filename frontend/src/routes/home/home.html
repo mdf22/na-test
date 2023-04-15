@@ -1,0 +1,35 @@
+Home
+<div>
+    <table class="table table-striped table-bordered table-sm">
+        <thead>
+            <tr>
+                <td></td>
+                <td>uid_integer</td>
+                <td>uid</td>
+                <td>is_online</td>
+                <td>label</td>
+                <td>manufacturer</td>
+                <td>model</td>
+                <td>mode_index</td>
+                <td>mode_count</td>
+                <td>address</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr repeat.for="device of data">
+                <td></td>
+                <td>${device.uid_integer}</td>
+                <td>${device.uid}</td>
+                <td>${device.is_online}</td>
+                <td>${device.label}</td>
+                <td>${device.manufacturer}</td>
+                <td>${device.model}</td>
+                <td>${device.mode_index}</td>
+                <td>${device.mode_count}</td>
+                <td>${device.address}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+

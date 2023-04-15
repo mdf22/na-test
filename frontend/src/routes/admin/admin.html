@@ -1,0 +1,31 @@
+<div class="container p-2" style="background-color: lightgray">
+    <p>RDM Server</p>
+    <div class="row">
+        <div class="col">
+            <label>
+                Add devices
+                <input type="number" value.bind="addCount"/>
+            </label>
+            <button  class="btn btn-primary" click.trigger="onAddDevice()">Add</button>
+        </div>
+        <div class="col">
+            <label>
+                Device online
+            </label>
+            <button  class="btn btn-primary" click.trigger="setUpdate('/online/all')">Set all</button>
+            <button  class="btn btn-primary" click.trigger="setUpdate('/online/none')">Set none</button>
+            <button  class="btn btn-primary" click.trigger="setUpdate('/online/random')">Set random</button>
+        </div>
+        <div class="col">
+            <label>
+                Device Update
+            </label>
+            <button  class="btn btn-primary" click.trigger="setUpdate('/online/first10')">Update first10</button>
+            <button  class="btn btn-primary" click.trigger="setUpdate('/online/first100')">Update first100</button>
+            <button  class="btn btn-primary" click.trigger="setUpdate('/online/random50')">Update random50</button>
+            <button  class="btn btn-primary" click.trigger="setUpdate('/online/random2')">Update random2</button>
+            <button  class="btn btn-primary" click.trigger="setUpdate('/online/all')">Update all</button>
+        </div>
+    </div>
+    <au-viewport></au-viewport>
+</div>
